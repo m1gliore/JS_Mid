@@ -1,0 +1,26 @@
+:root {
+    --width: 350px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.box {
+    width: var(--width);
+    margin: 0 auto;
+    background: orange;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.box-2 {
+    width: calc(var(--width) * 2);
+    margin: 0 auto;
+    background: orange;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}

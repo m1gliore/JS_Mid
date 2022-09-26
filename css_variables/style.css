@@ -1,0 +1,27 @@
+:root {
+    --main-txt-color: white;
+    --main-bg-color: purple;
+    --div-margin: 20px;
+}
+
+body {
+    background: linear-gradient(#005c97, #363795);
+    height: 100vh;
+}
+
+h1 {
+    color: var(--main-txt-color);
+    text-align: center;
+    font-size: 50px;
+    margin: 50px;
+}
+
+.boxes {
+    width: 90%;
+    margin: var(--div-margin) auto;
+    border: solid 2px orangered;
+    border-radius: 20px;
+    padding: 20px;
+    color: var(--main-txt-color);
+    background-color: var(--main-bg-color);
+}

@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    margin: 0 0;
+    border: 1px solid black;
+    width: 100vw;
+    height: 100vh;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+td:first-child {
+    background-origin: content-box;
+    background: url(images/1.jpg) center/cover no-repeat;
+    font-size: 20px;
+    column-count: 3;
+    hyphens: auto;
+    text-shadow: 2px 2px 2px black;
+}
+
+td:last-child {
+    background-color: green;
+    position: relative;
+}
+
+p {
+    margin: 0;
+}
+
+p:nth-child(1) {
+    color: red;
+    font-style: italic;
+}
+
+p:nth-child(2) {
+    color: orange;
+    font-weight: bold;
+}
+
+p:nth-child(3) {
+    color: orangered;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    width: 40%;
+    height: 300px;
+}
+
+img:nth-of-type(1) {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    opacity: 0.9;
+}
+
+img:nth-of-type(2) {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    opacity: 0.6;
+}
+
+img:nth-of-type(3) {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    opacity: 0.3;
+}
+
+img:nth-of-type(4) {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    height: 30%;
+    animation: scrollRotatePotato 4s ease-out infinite;
+}
+
+@keyframes scrollRotatePotato {
+
+    0%,
+    25%,
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate3d(0, 325px, 0) rotate(360deg);
+        opacity: 0.75;
+    }
+
+    50%,
+    75% {
+        transform: translate3d(0, 650px, 0) rotate(720deg);
+        opacity: 0.5;
+    }
+}

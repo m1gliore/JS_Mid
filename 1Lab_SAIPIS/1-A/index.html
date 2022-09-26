@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1-ALab</title>
+    <style>
+        tr {
+            background-color: yellow;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul ul {
+            list-style-type: "- ";
+        }
+
+        .counter {
+            list-style-type: none;
+            counter-reset: item;
+        }
+
+        .counter li.parenthesis:before {
+            content: counter(item) ') ';
+            counter-increment: item;
+        }
+
+        .counter li.aparenthesis:before {
+            content: counter(item, lower-alpha) ') ';
+            counter-increment: item;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Продукты питания</h1>
+    <table border="1" cellpadding="5" cellspacing="1" align="center" width="95%" height="100vh" bordercolor="black"
+        bgcolor="black">
+        <tr align="left" valign="middle">
+            <td colspan="3" rowspan="2" style="border: 15px solid black; border-right: 0;">
+                <h2 style="font-size: 25px; float: left; margin-right: 15px; color: red;">Факты о продуктах питания</h2>
+                <img src="images/1.jpg" width="40%" height="40%" alt="fruit" style="float: left;">
+            </td>
+            <td rowspan="4" valign="middle">
+                <p style="font-size: 20px; float: left; margin-right: 15px;">Рыбы в разных странах</p><img
+                    src="images/2.jpg" width="45%" height="25%" alt="fish" style="float: left;">
+                <ol style="font-size: 20px; float: left;">
+                    <li style="font-style: italic; font-weight: bold;">Россия</li>
+                    <ol>
+                        <li>
+                            <div style="text-decoration: underline; color: blue;">Судак</div>
+                        </li>
+                        <li>
+                            <div style="text-decoration: underline; color: blue;">Окунь</div>
+                        </li>
+                        <li>
+                            <div style="text-decoration: underline; color: blue;">Плотва</div>
+                        </li>
+                    </ol>
+                    <li style="font-style: italic; font-weight: bold;">Беларусь</li>
+                    <ul style="list-style-type: disc;">
+                        <li>Вьюн</li>
+                        <li>Белоглазка</li>
+                        <li>Голавль</li>
+                    </ul>
+                </ol>
+            </td>
+            <td style="border: 15px solid black; border-left: 0; border-bottom: 0;">
+                <h2 style="font-size: 25px; float: left; margin-right: 15px; color: green;">Про овощи</h2>
+            </td>
+            <td style="border: 15px solid black; border-left: 0; border-bottom: 0;">
+                <h2 style="font-size: 25px; float: left; margin-right: 15px; color: blue;">Про фрукты</h2>
+            </td>
+        </tr>
+        <tr align="left" valign="center">
+            <td style="border: 15px solid black; border-left: 0; border-bottom: 0;">
+                <p style="font-size: 20px; float: left; margin-right: 15px; margin-bottom: 5;">Виды овощей</p>
+                <ul style="font-size: 20px; float: left; margin-top: 0;">
+                    <li style="font-style: italic; font-weight: bold;">Клубнеплоды</li>
+                    <ul>
+                        <li>Картофель</li>
+                        <li>Топинамбур</li>
+                        <li>Батат</li>
+                    </ul>
+                    <li style="font-style: italic; font-weight: bold;">Корнеплоды </li>
+                    <ul>
+                        <li>Морквовь</li>
+                        <li>Репа</li>
+                        <li>Брюква</li>
+                    </ul>
+                </ul>
+            </td>
+            <td style="border: 15px solid black; border-left: 0; border-bottom: 0;">
+                <p style="font-size: 20px; float: left; margin-right: 15px; margin-bottom: 5;">Фрукты разных странах</p>
+                <ol style="font-size: 20px; float: left; margin-top: 0;">
+                    <li type="I" style="text-decoration: underline; font-weight: bold;">Фрукты Азии</li>
+                    <ol class="counter">
+                        <li type="A" value="1" style="font-style: italic; font-weight: bold;">Таиланд</li>
+                        <li class="parenthesis" style="margin-left: -24px;">Ананас</li>
+                        <li class="parenthesis" style="margin-left: -24px;">Гуава</li>
+                        <li type="A" value="2" style="font-style: italic; font-weight: bold;">Вьетнам</li>
+                        <li class="counter aparenthesis" style="margin-left: -24px;">Авокадо</li>
+                        <li class="aparenthesis" style="margin-left: -24px;">Дуриан</li>
+                    </ol>
+                    <li type="I" style="text-decoration: underline; font-weight: bold;">Фрукты Южной Америки</li>
+                    <ol type="A">
+                        <li style="font-style: italic; font-weight: bold;">Куба</li>
+                        <li type="1" value="1" style="margin-left: -4px">Аннона</li>
+                        <li type="1" value="2" style="margin-left: -4px">Грейпфрут</li>
+                        <li value="2" style="font-style: italic; font-weight: bold;">Доминикана</li><br>
+                        <li style="list-style-type: none; margin-left: -24px;">Гранадилла</li><br>
+                        <li style="list-style-type: none; margin-left: -24px;">Папайя</li>
+                    </ol>
+                </ol>
+            </td>
+        </tr>
+        <tr align=" left" valign="center">
+            <td rowspan="2" style="border-left: 15px solid black;">
+                <p style="font-size: 20px; font-style: italic; color: #66CC00; text-decoration: underline;">Если утром
+                    вам нелегко проснуться, одно свежее яблоко поможет с этой задачей
+                    даже лучше, чем чашка крепкого кофе</p>
+            </td>
+            <td rowspan="2">
+                <p style="font-size: 20px; font-weight: bold;">Кофе и чай вызывают у многих людей довольно сильное
+                    привыкание</p>
+            </td>
+            <td rowspan="2">
+                <p style="font-size: 20px; color: #ff8324; font-stretch: expanded; justify-content: center;">Всего в
+                    мире выращивается около 2 тысяч видов растений, употребляемых в пищу
+                </p>
+            </td>
+            <td style="border: 15px solid black; border-left: 0;">
+                <p style="font-size: 20px; font-stretch: condensed; color: rgb(111, 51, 155);">Зелёный картофель
+                    содержит соланин - смертельно опасное вещество</p>
+            </td>
+            <td style="border: 15px solid black; border-left: 0;">
+                <p style="font-size: 20px; font-family: Impact, fantasy; color: rgb(222, 102, 78);">Ананасы не
+                    самостоятельный плод, это группа ягод, которые присоединены к
+                    центральному стеблю</p>
+            </td>
+        </tr>
+        <tr align="left" valign="top">
+            <td colspan="2" style="height: 70px; padding: 0; border-right: 15px solid black;">
+                <div
+                    style="height: 100%; width: 100%; border-bottom: 15px solid black; border-right: 17px solid black;">
+                    <h2 style="font-size: 25px; float: left; margin-right: 15px; color: red;">Факты о продуктах питания
+                    </h2>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Адаптивные изображения</title>
+</head>
+
+<body>
+    <h1>Адаптивные изображения</h1>
+    <picture>
+        <source media="(min-width: 500px)" srcset="
+                images/elephant-large.jpg 1000w,
+                images/elephant-large-2x.jpg 1300w,
+                images/elephant-large-3x.jpg 1500w">
+        <source srcset="
+                images/elephant-small.jpg 300w,
+                images/elephant-small-2x.jpg 400w,
+                images/elephant-small-3x.jpg 500w">
+        <img src="images/elephant-large.jpg" alt="Слон">
+    </picture>
+</body>
+
+</html>
